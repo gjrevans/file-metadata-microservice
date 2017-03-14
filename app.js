@@ -37,7 +37,7 @@ routes = new Routes(models);
 app.get('/', routes.pages.index);
 
 /* -- Api Routes -- */
-app.get('/api', routes.api.index);
+app.post('/api/upload', routes.api.upload);
 
 // Catch 404 and forward to error handler
 app.use(function(req, res, next) {
